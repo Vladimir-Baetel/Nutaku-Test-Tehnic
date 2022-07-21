@@ -16,18 +16,21 @@
 
 header {
   background-color: #bcecf8;
+  background-image: url("assets/desktop_banner.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    background-image: url("assets/mobile_banner.jpg");
+  }
 
   .wrapper {
     position: relative;
     justify-content: center;
-    background-image: url("assets/desktop_banner.jpg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
-    overflow: hidden;
 
     @media (max-width: 768px) {
-      background-image: url("assets/mobile_banner.jpg");
       height: 90vh;
     }
 
@@ -129,12 +132,14 @@ header {
 }
 
 main {
-  background-color: #70c05d;
   padding-bottom: 4em;
+  background-color: #70c05d;
+  background-image: url("assets/bg_secondary.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
 
   .wrapper {
-    background-image: url("assets/bg_secondary.jpg");
-
     .container__game-card {
       width: 90%;
       padding: 0 1em;
